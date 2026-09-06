@@ -12,10 +12,19 @@
     a { color: #0066cc; text-decoration: none; }
     a:hover { text-decoration: underline; }
     .badge { display: inline-block; background: #eef2ff; color: #4338ca; padding: 4px 12px; border-radius: 999px; font-size: 0.875rem; font-weight: 600; margin-bottom: 1rem; }
+    .auth-box { display: none; background: #ecfdf5; border: 1px solid #10b981; padding: 16px; border-radius: 8px; margin-bottom: 24px; }
+    .auth-box h3 { margin: 0 0 8px; color: #065f46; }
+    .code-display { font-family: monospace; background: #fff; padding: 8px 12px; border: 1px solid #a7f3d0; border-radius: 4px; word-break: break-all; margin: 8px 0; font-size: 1.1rem; }
     footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #eee; font-size: 0.9rem; color: #666; }
   </style>
 </head>
 <body>
+  <div id="authBox" class="auth-box">
+    <h3>TikTok Account Connected Successfully!</h3>
+    <p>Your authorization code has been received. Copy and paste it into the terminal:</p>
+    <div id="codeDisplay" class="code-display"></div>
+  </div>
+
   <div class="badge">Official Application</div>
   <h1>TopPilot</h1>
   <p>TopPilot is an automated content creation and management platform designed to produce and publish high-quality educational and entertainment short-form videos directly to connected creator social media channels.</p>
@@ -37,5 +46,14 @@
   <footer>
     <p>&copy; 2026 TopPilot. All rights reserved. Contact: top5automatizado@gmail.com</p>
   </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get('code');
+    if (code) {
+      document.getElementById('authBox').style.display = 'block';
+      document.getElementById('codeDisplay').textContent = code;
+    }
+  </script>
 </body>
 </html>
