@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="tiktok-developers-site-verification" content="qVktuzP70MdzqGXsXdcHOztj4mCbu21o">
-  <meta name="description" content="TopPilot — Automated short-form video creation and publishing platform for creators.">
-  <title>TopPilot — Automated Video Publishing</title>
+  <meta name="description" content="TopPilot — Canal de conteudo educativo publicado diariamente de forma automatizada.">
+  <title>TopPilot — Daily Educational Content</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="logo-192.png">
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--navy:#0f1c35;--navy-mid:#162240;--blue-accent:#1a3a6e;--white:#fff;--gray-light:#f4f6fb;--gray-mid:#8a96b0;--highlight:#4f86f7}
+    :root{--navy:#0f1c35;--blue-accent:#1a3a6e;--white:#fff;--gray-light:#f4f6fb;--gray-mid:#8a96b0;--highlight:#4f86f7}
     body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#fff;color:var(--navy);line-height:1.6}
     nav{background:var(--navy);padding:16px 40px;display:flex;align-items:center;justify-content:space-between}
     nav .logo-wrap{display:flex;align-items:center;gap:12px;text-decoration:none}
@@ -21,26 +21,28 @@
     nav ul a:hover{color:#fff}
     .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--blue-accent) 100%);color:#fff;padding:100px 40px 80px;text-align:center}
     .badge{display:inline-block;background:rgba(79,134,247,.2);color:var(--highlight);border:1px solid rgba(79,134,247,.4);padding:6px 16px;border-radius:999px;font-size:.82rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:24px}
-    .hero h1{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:800;line-height:1.15;margin-bottom:20px}
+    .hero h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;line-height:1.15;margin-bottom:20px}
     .hero h1 span{color:var(--highlight)}
-    .hero p{font-size:1.1rem;color:rgba(255,255,255,.75);max-width:600px;margin:0 auto 40px}
-    .hero-cta{display:inline-block;background:var(--highlight);color:#fff;padding:14px 36px;border-radius:8px;font-size:1rem;font-weight:600;text-decoration:none;transition:background .2s,transform .2s}
-    .hero-cta:hover{background:#3a71e8;transform:translateY(-2px)}
+    .hero p{font-size:1.1rem;color:rgba(255,255,255,.75);max-width:640px;margin:0 auto 40px}
+    .btn{display:inline-flex;align-items:center;gap:8px;background:var(--highlight);color:#fff;padding:14px 36px;border-radius:8px;font-size:1rem;font-weight:600;text-decoration:none;transition:background .2s,transform .2s}
+    .btn:hover{background:#3a71e8;transform:translateY(-2px)}
+    .btn-outline{background:transparent;border:2px solid rgba(255,255,255,.4);margin-left:12px}
+    .btn-outline:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}
     .stats{background:var(--gray-light);padding:48px 40px;display:flex;justify-content:center;gap:64px;flex-wrap:wrap}
     .stat-item{text-align:center}
     .stat-item .number{font-size:2.4rem;font-weight:800;color:var(--navy);display:block}
     .stat-item .label{font-size:.9rem;color:var(--gray-mid);margin-top:4px}
-    .features{padding:80px 40px;max-width:1100px;margin:0 auto}
+    .about{padding:80px 40px;max-width:900px;margin:0 auto;text-align:center}
     .section-label{text-align:center;font-size:.8rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--highlight);margin-bottom:12px}
-    .section-title{text-align:center;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:var(--navy);margin-bottom:60px}
-    .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px}
-    .feature-card{background:var(--gray-light);border-radius:16px;padding:32px;transition:transform .2s,box-shadow .2s}
-    .feature-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(15,28,53,.08)}
-    .feature-icon{width:48px;height:48px;background:var(--navy);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:1.5rem}
-    .feature-card h3{font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:10px}
-    .feature-card p{font-size:.93rem;color:#4a5568;line-height:1.65}
+    .section-title{text-align:center;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:var(--navy);margin-bottom:20px}
+    .about .lead{font-size:1.1rem;color:#4a5568;line-height:1.8;max-width:720px;margin:0 auto 48px}
+    .topics-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;text-align:left;margin-top:40px}
+    .topic-card{background:var(--gray-light);border-radius:16px;padding:28px;border-left:4px solid var(--highlight)}
+    .topic-card h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:8px}
+    .topic-card p{font-size:.9rem;color:#4a5568;line-height:1.6}
     .how{background:var(--navy);padding:80px 40px;color:#fff}
-    .how .section-title{color:#fff}
+    .how .section-title{color:#fff;margin-bottom:12px}
+    .how .sub{text-align:center;color:rgba(255,255,255,.6);font-size:.95rem;max-width:560px;margin:0 auto 56px}
     .steps{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;max-width:1000px;margin:0 auto}
     .step{text-align:center;max-width:200px}
     .step-number{width:56px;height:56px;background:var(--highlight);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:800;margin:0 auto 16px;color:#fff}
@@ -51,11 +53,9 @@
     .platform-logos .plat{display:flex;flex-direction:column;align-items:center;gap:10px;font-size:.85rem;font-weight:600;color:var(--gray-mid)}
     .platform-logos .plat .icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.8rem}
     .tiktok-icon{background:#010101}.yt-icon{background:#ff0000}.ig-icon{background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045)}
-    .contact{background:var(--gray-light);padding:60px 40px;text-align:center}
-    .contact h2{font-size:1.6rem;font-weight:800;margin-bottom:12px}
-    .contact p{color:#4a5568;margin-bottom:24px}
-    .contact a{color:var(--highlight);font-weight:600;text-decoration:none}
-    .contact a:hover{text-decoration:underline}
+    .footer-cta{background:var(--gray-light);padding:80px 40px;text-align:center}
+    .footer-cta h2{font-size:1.8rem;font-weight:800;margin-bottom:12px}
+    .footer-cta p{color:#4a5568;margin-bottom:32px;max-width:520px;margin-left:auto;margin-right:auto}
     footer{background:var(--navy);color:rgba(255,255,255,.5);padding:32px 40px;text-align:center;font-size:.88rem}
     footer a{color:rgba(255,255,255,.6);text-decoration:none;margin:0 12px}
     footer a:hover{color:#fff}
@@ -69,78 +69,114 @@
 </head>
 <body>
   <div id="authBox" class="auth-box">
-    <h3>TikTok Account Connected!</h3>
+    <h3>Account Connected!</h3>
     <p>Copy and paste the code below into the terminal:</p>
     <div id="codeDisplay" class="code-display"></div>
   </div>
+
   <nav>
     <a href="#" class="logo-wrap">
       <img src="logo-192.png" alt="TopPilot Logo">
       <span>TopPilot</span>
     </a>
     <ul>
-      <li><a href="#features">Features</a></li>
-      <li><a href="#how-it-works">How it works</a></li>
-      <li><a href="#platforms">Platforms</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#content">Content</a></li>
+      <li><a href="#platforms">Follow us</a></li>
       <li><a href="privacy.html">Privacy</a></li>
       <li><a href="terms.html">Terms</a></li>
     </ul>
   </nav>
+
   <section class="hero">
-    <div class="badge">Content Automation Platform</div>
-    <h1>Your Content, Published<br><span>While You Sleep</span></h1>
-    <p>TopPilot automates the entire lifecycle of short-form video creation — from script to upload — so creators can focus on what matters most.</p>
-    <a href="mailto:top5automatizado@gmail.com" class="hero-cta">Get in Touch</a>
+    <div class="badge">Educational Content · Published Daily</div>
+    <h1>Learn Something New<br><span>Every Single Day</span></h1>
+    <p>TopPilot is an automated educational content channel. We publish short-form videos about science, history, technology and fascinating world facts — every day, across all major platforms.</p>
+    <a href="#platforms" class="btn">Follow Our Channel</a>
+    <a href="#content" class="btn btn-outline">See What We Cover</a>
   </section>
+
   <div class="stats">
-    <div class="stat-item"><span class="number">100%</span><span class="label">Automated Pipeline</span></div>
-    <div class="stat-item"><span class="number">3</span><span class="label">Platforms Supported</span></div>
-    <div class="stat-item"><span class="number">&lt; 5min</span><span class="label">Generation Time</span></div>
-    <div class="stat-item"><span class="number">Daily</span><span class="label">Scheduled Publishing</span></div>
+    <div class="stat-item"><span class="number">Daily</span><span class="label">New Videos Published</span></div>
+    <div class="stat-item"><span class="number">3+</span><span class="label">Platforms</span></div>
+    <div class="stat-item"><span class="number">100%</span><span class="label">Educational Content</span></div>
+    <div class="stat-item"><span class="number">Free</span><span class="label">Always Free to Watch</span></div>
   </div>
-  <section class="features" id="features">
-    <p class="section-label">Platform Features</p>
-    <h2 class="section-title">Everything You Need to Scale Your Channel</h2>
-    <div class="features-grid">
-      <div class="feature-card"><div class="feature-icon">🤖</div><h3>AI Script Generation</h3><p>Powered by a large language model, TopPilot researches trending topics and writes structured, engaging scripts tailored to your audience.</p></div>
-      <div class="feature-card"><div class="feature-icon">🎙️</div><h3>Natural Voice Synthesis</h3><p>Human-sounding narration is generated from the script using neural text-to-speech. No recording required — professional quality every time.</p></div>
-      <div class="feature-card"><div class="feature-icon">🎬</div><h3>Automated Video Editing</h3><p>Relevant stock footage is sourced and cut to perfectly match the narration, with dynamic transitions to maintain viewer attention.</p></div>
-      <div class="feature-card"><div class="feature-icon">💬</div><h3>Dynamic Subtitles</h3><p>Word-by-word animated captions are burned into the video — perfectly synced with every spoken word for maximum engagement.</p></div>
-      <div class="feature-card"><div class="feature-icon">📤</div><h3>Multi-Platform Publishing</h3><p>Finished videos are automatically published to TikTok, YouTube Shorts, Instagram Reels and Facebook with optimized metadata.</p></div>
-      <div class="feature-card"><div class="feature-icon">🔒</div><h3>Secure OAuth Integration</h3><p>Creator accounts are connected via official OAuth flows. Credentials are stored securely and never shared with third parties.</p></div>
+
+  <section class="about" id="about">
+    <p class="section-label">About TopPilot</p>
+    <h2 class="section-title">Bite-Sized Knowledge, Every Day</h2>
+    <p class="lead">TopPilot is an independent educational content project. Our goal is simple: make learning interesting and accessible by delivering high-quality short videos on topics that matter — science, history, technology, nature, economics and more. All content is researched, produced and published automatically so there is always something new to discover.</p>
+  </section>
+
+  <section id="content" style="background:var(--gray-light);padding:80px 40px;">
+    <div style="max-width:1100px;margin:0 auto">
+      <p class="section-label">What We Cover</p>
+      <h2 class="section-title">Topics That Expand Your Mind</h2>
+      <div class="topics-grid">
+        <div class="topic-card">
+          <h3>🔬 Science & Nature</h3>
+          <p>From quantum physics to deep-sea creatures — we break down complex scientific concepts into clear, engaging stories.</p>
+        </div>
+        <div class="topic-card">
+          <h3>📜 History & Civilization</h3>
+          <p>Forgotten empires, decisive battles and the moments that changed the course of human history.</p>
+        </div>
+        <div class="topic-card">
+          <h3>💡 Technology & Innovation</h3>
+          <p>How today's technologies work, who invented them and how they are quietly reshaping every aspect of daily life.</p>
+        </div>
+        <div class="topic-card">
+          <h3>🌍 World Rankings & Facts</h3>
+          <p>Surprising comparisons, record-breaking facts and rankings about countries, animals, cities and phenomena.</p>
+        </div>
+        <div class="topic-card">
+          <h3>🧠 Psychology & Behavior</h3>
+          <p>Why do humans make the decisions they do? We explore cognitive biases, social dynamics and the science of the mind.</p>
+        </div>
+        <div class="topic-card">
+          <h3>📊 Economics & Society</h3>
+          <p>Accessible explanations of economic forces, market trends and the systems that shape how the world works.</p>
+        </div>
+      </div>
     </div>
   </section>
-  <section class="how" id="how-it-works">
-    <p class="section-label" style="color:rgba(79,134,247,.8)">How it works</p>
-    <h2 class="section-title">From Idea to Published in Minutes</h2>
+
+  <section class="how" id="how">
+    <p class="section-label" style="color:rgba(79,134,247,.8)">Our Process</p>
+    <h2 class="section-title">How Our Content is Made</h2>
+    <p class="sub">Every video goes through a rigorous automated pipeline to ensure accuracy, clarity and consistency.</p>
     <div class="steps">
-      <div class="step"><div class="step-number">1</div><h4>Script</h4><p>AI generates a fully structured script based on trending topics</p></div>
-      <div class="step"><div class="step-number">2</div><h4>Narrate</h4><p>Neural TTS converts the script into a natural voice track</p></div>
-      <div class="step"><div class="step-number">3</div><h4>Edit</h4><p>Footage is sourced, cut and stitched with captions in sync</p></div>
-      <div class="step"><div class="step-number">4</div><h4>Publish</h4><p>The final video is posted across all connected platforms</p></div>
+      <div class="step"><div class="step-number">1</div><h4>Research</h4><p>Topics are identified and a structured, fact-based script is generated</p></div>
+      <div class="step"><div class="step-number">2</div><h4>Narration</h4><p>The script is converted into clear, natural-sounding audio narration</p></div>
+      <div class="step"><div class="step-number">3</div><h4>Production</h4><p>Relevant visuals are assembled and synchronized with the narration and captions</p></div>
+      <div class="step"><div class="step-number">4</div><h4>Publishing</h4><p>The finished video goes live across all platforms simultaneously</p></div>
     </div>
   </section>
+
   <section class="platforms" id="platforms">
-    <p class="section-label">Integrations</p>
-    <h2 class="section-title">Publish Everywhere, Automatically</h2>
+    <p class="section-label">Follow Us</p>
+    <h2 class="section-title">Find TopPilot on Your Platform</h2>
+    <p style="color:#4a5568;margin-top:-32px;margin-bottom:0">New videos published daily. Follow us and never miss an episode.</p>
     <div class="platform-logos">
       <div class="plat"><div class="icon tiktok-icon">🎵</div>TikTok</div>
       <div class="plat"><div class="icon yt-icon">▶️</div>YouTube Shorts</div>
       <div class="plat"><div class="icon ig-icon">📸</div>Instagram Reels</div>
     </div>
   </section>
-  <section class="contact">
-    <h2>Get in Touch</h2>
-    <p>Questions about our platform, integrations or data practices?</p>
-    <a href="mailto:top5automatizado@gmail.com">top5automatizado@gmail.com</a>
-    <br><br>
-    <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html">Terms of Service</a>
-  </section>
+
+  <div class="footer-cta">
+    <h2>Stay Curious</h2>
+    <p>Follow TopPilot on your favourite platform and get a fresh dose of knowledge delivered to your feed every day.</p>
+    <a href="mailto:top5automatizado@gmail.com" class="btn" style="background:var(--navy)">Contact Us</a>
+  </div>
+
   <footer>
     <div class="footer-logo"><img src="logo-192.png" alt="TopPilot"><span>TopPilot</span></div>
     <p><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></p>
-    <br><p>&copy; 2026 TopPilot. All rights reserved.</p>
+    <br><p>&copy; 2026 TopPilot. All rights reserved. &nbsp;·&nbsp; top5automatizado@gmail.com</p>
   </footer>
+
   <script>
     const params = new URLSearchParams(window.location.search);
     const code = params.get("code");
