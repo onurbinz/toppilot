@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TopPilot — Todos os episódios educativos sobre tecnologia, ciência, natureza e curiosidades do mundo.">
+  <title>Episódios — TopPilot</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="logo-192.png">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--navy:#0f1c35;--blue-accent:#1a3a6e;--white:#fff;--gray-light:#f4f6fb;--gray-mid:#8a96b0;--highlight:#4f86f7}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#fff;color:var(--navy);line-height:1.6}
+    nav{background:var(--navy);padding:16px 40px;display:flex;align-items:center;justify-content:space-between}
+    nav .logo-wrap{display:flex;align-items:center;gap:12px;text-decoration:none}
+    nav .logo-wrap img{width:40px;height:40px;border-radius:50%;object-fit:cover}
+    nav .logo-wrap span{color:#fff;font-size:1.2rem;font-weight:700}
+    nav ul{display:flex;gap:28px;list-style:none}
+    nav ul a{color:var(--gray-mid);text-decoration:none;font-size:.95rem;transition:color .2s}
+    nav ul a:hover,nav ul a.active{color:#fff}
+    .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--blue-accent) 100%);color:#fff;padding:80px 40px 60px;text-align:center}
+    .badge{display:inline-block;background:rgba(79,134,247,.2);color:var(--highlight);border:1px solid rgba(79,134,247,.4);padding:6px 16px;border-radius:999px;font-size:.82rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:24px}
+    .hero h1{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;line-height:1.2;margin-bottom:16px}
+    .hero h1 span{color:var(--highlight)}
+    .hero p{font-size:1rem;color:rgba(255,255,255,.75);max-width:580px;margin:0 auto}
+    .episodes-section{padding:72px 40px;max-width:1200px;margin:0 auto}
+    .section-label{text-align:center;font-size:.8rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--highlight);margin-bottom:12px}
+    .section-title{text-align:center;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:var(--navy);margin-bottom:48px}
+    .episodes-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:28px}
+    .episode-card{background:#fff;border-radius:16px;border:1px solid #e2e8f0;overflow:hidden;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+    .episode-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(15,28,53,.12)}
+    .card-top{background:var(--navy);padding:32px;text-align:center}
+    .card-emoji{font-size:3rem;margin-bottom:8px;display:block}
+    .card-date{font-size:.78rem;color:var(--gray-mid);margin-top:8px}
+    .card-body{padding:24px;flex:1;display:flex;flex-direction:column}
+    .card-body h3{font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:10px;line-height:1.4}
+    .card-body p{font-size:.88rem;color:#4a5568;line-height:1.6;flex:1}
+    .card-footer{padding:16px 24px;border-top:1px solid #f0f4f8}
+    .btn-card{display:inline-flex;align-items:center;gap:6px;background:var(--highlight);color:#fff;padding:10px 24px;border-radius:8px;font-size:.88rem;font-weight:600;text-decoration:none;transition:background .2s}
+    .btn-card:hover{background:#3a71e8}
+    footer{background:var(--navy);color:rgba(255,255,255,.5);padding:32px 40px;text-align:center;font-size:.88rem}
+    footer a{color:rgba(255,255,255,.6);text-decoration:none;margin:0 12px}
+    footer a:hover{color:#fff}
+    .footer-logo{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:20px}
+    .footer-logo img{width:32px;height:32px;border-radius:50%}
+    .footer-logo span{color:#fff;font-weight:700;font-size:1rem}
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo-wrap">
+      <img src="logo-192.png" alt="TopPilot Logo">
+      <span>TopPilot</span>
+    </a>
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#content">Content</a></li>
+      <li><a href="index.html#platforms">Follow us</a></li>
+      <li><a href="videos.html" class="active">Videos</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="badge">Episódios</div>
+    <h1>Todos os <span>Episódios</span></h1>
+    <p>Conteúdo educativo sobre tecnologia, ciência, natureza e as maiores curiosidades do mundo — publicado automaticamente todo dia.</p>
+  </section>
+
+  <section class="episodes-section">
+    <p class="section-label">Nosso Conteúdo</p>
+    <h2 class="section-title">Episódios Publicados</h2>
+    <div class="episodes-grid">
+
+      <div class="episode-card">
+        <div class="card-top">
+          <span class="card-emoji">🚀</span>
+          <div class="card-date">02 set. 2026</div>
+        </div>
+        <div class="card-body">
+          <h3>Top 5 Foguetes Mais Poderosos do Mundo</h3>
+          <p>Os maiores propulsores já construídos pela humanidade, capazes de levar toneladas ao espaço e definir o curso da exploração espacial.</p>
+        </div>
+        <div class="card-footer">
+          <a href="artigos/foguetes.html" class="btn-card">Ler Artigo →</a>
+        </div>
+      </div>
+
+      <div class="episode-card">
+        <div class="card-top">
+          <span class="card-emoji">☀️</span>
+          <div class="card-date">05 set. 2026</div>
+        </div>
+        <div class="card-body">
+          <h3>Top 5 Maiores Usinas Solares do Mundo</h3>
+          <p>Gigantescas instalações de energia renovável que estão transformando a matriz energética global e reduzindo emissões de carbono.</p>
+        </div>
+        <div class="card-footer">
+          <a href="artigos/usinas-solares.html" class="btn-card">Ler Artigo →</a>
+        </div>
+      </div>
+
+      <div class="episode-card">
+        <div class="card-top">
+          <span class="card-emoji">🔭</span>
+          <div class="card-date">08 set. 2026</div>
+        </div>
+        <div class="card-body">
+          <h3>Top 5 Maiores Telescópios Ópticos do Mundo</h3>
+          <p>Instrumentos extraordinários que nos permitem observar galáxias a bilhões de anos-luz e desvendar os segredos do cosmos.</p>
+        </div>
+        <div class="card-footer">
+          <a href="artigos/telescopios.html" class="btn-card">Ler Artigo →</a>
+        </div>
+      </div>
+
+      <div class="episode-card">
+        <div class="card-top">
+          <span class="card-emoji">🌉</span>
+          <div class="card-date">11 set. 2026</div>
+        </div>
+        <div class="card-body">
+          <h3>Top 5 Pontes de Vidro Mais Altas do Mundo</h3>
+          <p>Estruturas vertiginosas suspensas sobre abismos que desafiam o medo e demonstram o avanço impressionante da engenharia moderna.</p>
+        </div>
+        <div class="card-footer">
+          <a href="artigos/pontes-vidro.html" class="btn-card">Ler Artigo →</a>
+        </div>
+      </div>
+
+      <div class="episode-card">
+        <div class="card-top">
+          <span class="card-emoji">⚡</span>
+          <div class="card-date">14 set. 2026</div>
+        </div>
+        <div class="card-body">
+          <h3>Top 5 Carros Elétricos Mais Rápidos do Mundo</h3>
+          <p>Supercars elétricos que superam a maioria dos veículos a combustão em velocidade pura, redefinindo os limites do desempenho automotivo.</p>
+        </div>
+        <div class="card-footer">
+          <a href="artigos/carros-eletricos.html" class="btn-card">Ler Artigo →</a>
+        </div>
+      </div>
+
+      <div class="episode-card">
+        <div class="card-top">
+          <span class="card-emoji">🏟️</span>
+          <div class="card-date">17 set. 2026</div>
+        </div>
+        <div class="card-body">
+          <h3>Top 5 Estádios Subaquáticos Mais Impressionantes do Mundo</h3>
+          <p>Projetos arquitetônicos revolucionários que reimaginam o conceito de arena esportiva integrando engenharia e natureza aquática.</p>
+        </div>
+        <div class="card-footer">
+          <a href="artigos/estadios-subaquaticos.html" class="btn-card">Ler Artigo →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo"><img src="logo-192.png" alt="TopPilot"><span>TopPilot</span></div>
+    <p><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></p>
+    <br><p>&copy; 2026 TopPilot. All rights reserved. &nbsp;·&nbsp; top5automatizado@gmail.com</p>
+  </footer>
+</body>
+</html>

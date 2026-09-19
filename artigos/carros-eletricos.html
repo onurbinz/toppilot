@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Top 5 Carros Elétricos Mais Rápidos do Mundo — TopPilot">
+  <title>Top 5 Carros Elétricos Mais Rápidos do Mundo — TopPilot</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="apple-touch-icon" href="../logo-192.png">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--navy:#0f1c35;--blue-accent:#1a3a6e;--white:#fff;--gray-light:#f4f6fb;--gray-mid:#8a96b0;--highlight:#4f86f7}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#fff;color:var(--navy);line-height:1.6}
+    nav{background:var(--navy);padding:16px 40px;display:flex;align-items:center;justify-content:space-between}
+    nav .logo-wrap{display:flex;align-items:center;gap:12px;text-decoration:none}
+    nav .logo-wrap img{width:40px;height:40px;border-radius:50%;object-fit:cover}
+    nav .logo-wrap span{color:#fff;font-size:1.2rem;font-weight:700}
+    nav ul{display:flex;gap:28px;list-style:none}
+    nav ul a{color:var(--gray-mid);text-decoration:none;font-size:.95rem;transition:color .2s}
+    nav ul a:hover,nav ul a.active{color:#fff}
+    .breadcrumb{background:var(--gray-light);padding:12px 40px;font-size:.85rem;color:var(--gray-mid)}
+    .breadcrumb a{color:var(--highlight);text-decoration:none}
+    .breadcrumb a:hover{text-decoration:underline}
+    .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--blue-accent) 100%);color:#fff;padding:72px 40px 60px;text-align:center}
+    .badge{display:inline-block;background:rgba(79,134,247,.2);color:var(--highlight);border:1px solid rgba(79,134,247,.4);padding:6px 16px;border-radius:999px;font-size:.82rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:24px}
+    .hero h1{font-size:clamp(1.6rem,4vw,2.6rem);font-weight:800;line-height:1.2;max-width:800px;margin:0 auto}
+    .article-meta{display:flex;justify-content:center;gap:24px;margin-top:20px;flex-wrap:wrap}
+    .meta-badge{background:rgba(255,255,255,.1);color:rgba(255,255,255,.8);padding:6px 16px;border-radius:999px;font-size:.8rem}
+    .article-wrap{max-width:860px;margin:0 auto;padding:60px 40px}
+    .article-intro{font-size:1.1rem;color:#4a5568;line-height:1.8;margin-bottom:48px;padding-bottom:32px;border-bottom:2px solid var(--gray-light)}
+    .rank-section{margin-bottom:48px}
+    .rank-header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+    .rank-number{width:52px;height:52px;background:var(--highlight);color:#fff;font-size:1.4rem;font-weight:800;display:flex;align-items:center;justify-content:center;border-radius:12px;flex-shrink:0}
+    .rank-number.gold{background:linear-gradient(135deg,#f59e0b,#d97706)}
+    .rank-title{font-size:1.4rem;font-weight:800;color:var(--navy)}
+    .rank-subtitle{font-size:.85rem;color:var(--gray-mid);margin-top:2px}
+    .specs-bar{background:var(--gray-light);border-radius:12px;padding:16px 20px;display:flex;gap:24px;flex-wrap:wrap;margin-bottom:20px}
+    .spec{display:flex;flex-direction:column}
+    .spec-label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--gray-mid)}
+    .spec-value{font-size:.98rem;font-weight:700;color:var(--navy)}
+    .rank-section p{font-size:.97rem;color:#4a5568;line-height:1.8;margin-bottom:14px}
+    .rank-divider{border:none;border-top:1px solid #e2e8f0;margin:40px 0}
+    .conclusion{background:var(--navy);color:#fff;border-radius:16px;padding:40px;margin-bottom:48px}
+    .conclusion h2{font-size:1.4rem;font-weight:800;margin-bottom:16px;color:var(--highlight)}
+    .conclusion p{font-size:.97rem;color:rgba(255,255,255,.8);line-height:1.8}
+    .more-episodes{background:var(--gray-light);border-radius:16px;padding:40px;text-align:center}
+    .more-episodes h3{font-size:1.2rem;font-weight:700;color:var(--navy);margin-bottom:12px}
+    .more-episodes p{font-size:.9rem;color:#4a5568;margin-bottom:24px}
+    .btn{display:inline-flex;align-items:center;gap:8px;background:var(--highlight);color:#fff;padding:12px 32px;border-radius:8px;font-size:.95rem;font-weight:600;text-decoration:none;transition:background .2s}
+    .btn:hover{background:#3a71e8}
+    footer{background:var(--navy);color:rgba(255,255,255,.5);padding:32px 40px;text-align:center;font-size:.88rem}
+    footer a{color:rgba(255,255,255,.6);text-decoration:none;margin:0 12px}
+    footer a:hover{color:#fff}
+    .footer-logo{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:20px}
+    .footer-logo img{width:32px;height:32px;border-radius:50%}
+    .footer-logo span{color:#fff;font-weight:700;font-size:1rem}
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="../index.html" class="logo-wrap">
+      <img src="../logo-192.png" alt="TopPilot Logo">
+      <span>TopPilot</span>
+    </a>
+    <ul>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#content">Content</a></li>
+      <li><a href="../index.html#platforms">Follow us</a></li>
+      <li><a href="../videos.html" class="active">Videos</a></li>
+      <li><a href="../privacy.html">Privacy</a></li>
+      <li><a href="../terms.html">Terms</a></li>
+    </ul>
+  </nav>
+
+  <div class="breadcrumb">
+    <a href="../index.html">Home</a> &rsaquo; <a href="../videos.html">Episódios</a> &rsaquo; Top 5 Carros Elétricos Mais Rápidos do Mundo
+  </div>
+
+  <section class="hero">
+    <div class="badge">Tecnologia Automotiva</div>
+    <h1>Top 5 Carros Elétricos Mais Rápidos do Mundo</h1>
+    <div class="article-meta">
+      <span class="meta-badge">📅 Publicado em 14 set. 2026</span>
+      <span class="meta-badge">🏷️ Categoria: Tecnologia</span>
+      <span class="meta-badge">⏱️ Leitura: ~7 min</span>
+    </div>
+  </section>
+
+  <div class="article-wrap">
+    <p class="article-intro">
+      Por décadas, os veículos elétricos foram associados a lentidão e autonomia limitada. Essa percepção foi completamente desconstruída nos últimos anos. Os hypercars elétricos modernos não apenas competem com os mais rápidos carros a combustão do mundo — eles os superam. Com motores elétricos capazes de entregar torque máximo instantaneamente, esses veículos redefinem o que significa velocidade. Conheça os cinco carros elétricos de produção mais rápidos do planeta.
+    </p>
+
+    <div class="rank-section">
+      <div class="rank-header">
+        <div class="rank-number">#5</div>
+        <div>
+          <div class="rank-title">Tesla Model S Plaid</div>
+          <div class="rank-subtitle">Estados Unidos · Tesla, Inc.</div>
+        </div>
+      </div>
+      <div class="specs-bar">
+        <div class="spec"><span class="spec-label">Vel. Máxima</span><span class="spec-value">322 km/h</span></div>
+        <div class="spec"><span class="spec-label">0–100 km/h</span><span class="spec-value">1,99 s</span></div>
+        <div class="spec"><span class="spec-label">Autonomia</span><span class="spec-value">637 km (WLTP)</span></div>
+        <div class="spec"><span class="spec-label">Potência</span><span class="spec-value">1.020 cv</span></div>
+      </div>
+      <p>O Tesla Model S Plaid é talvez o carro elétrico mais influente desta lista — não por ser o mais rápido em velocidade máxima, mas por ter sido o primeiro veículo de produção em série a quebrar a barreira dos 2 segundos no sprint de 0 a 100 km/h, com um impressionante tempo de 1,99 segundos. Isso coloca um sedã de quatro portas e cinco lugares na mesma liga das mais exclusivas hypercars do planeta.</p>
+      <p>O segredo do Plaid está no seu sistema de tração tripla (três motores elétricos) e na arquitetura de bateria de 100 kWh que alimenta 1.020 cavalos de potência combinados. A Tesla desenvolveu também uma caixa de câmbio de dois estágios especificamente para o Model S Plaid Track Package, que eleva a velocidade máxima para além dos 320 km/h em configuração de pista.</p>
+      <p>Com autonomia de até 637 km por carga segundo o ciclo WLTP — a maior entre os carros desta lista — o Model S Plaid demonstra que desempenho extremo e praticidade no dia a dia não precisam ser excludentes. A partir de aproximadamente 140.000 dólares, ele é também o mais acessível desta lista, provando que a revolução elétrica de alto desempenho já chegou ao mainstream de luxo.</p>
+    </div>
+
+    <hr class="rank-divider">
+
+    <div class="rank-section">
+      <div class="rank-header">
+        <div class="rank-number">#4</div>
+        <div>
+          <div class="rank-title">Pininfarina Battista</div>
+          <div class="rank-subtitle">Itália · Automobili Pininfarina</div>
+        </div>
+      </div>
+      <div class="specs-bar">
+        <div class="spec"><span class="spec-label">Vel. Máxima</span><span class="spec-value">350 km/h</span></div>
+        <div class="spec"><span class="spec-label">0–100 km/h</span><span class="spec-value">1,86 s</span></div>
+        <div class="spec"><span class="spec-label">Autonomia</span><span class="spec-value">490 km (WLTP)</span></div>
+        <div class="spec"><span class="spec-label">Potência</span><span class="spec-value">1.900 cv</span></div>
+      </div>
+      <p>A Automobili Pininfarina — filial da lendária casa de design italiana responsável por dar forma a alguns dos Ferraris mais icônicos da história — estreou no mundo dos hypercars elétricos com o Battista, e o resultado é deslumbrante em todos os sentidos. Com 1.900 cavalos de potência provenientes de quatro motores elétricos (um em cada roda), o Battista acelera de 0 a 100 km/h em 1,86 segundos e atinge uma velocidade máxima de 350 km/h.</p>
+      <p>A plataforma do Battista compartilha tecnologia com o Rimac C_Two (base do Nevera), aproveitando décadas de experiência da empresa croata em sistemas de propulsão elétrica de alta performance. No entanto, a Pininfarina adicionou sua própria linguagem visual — o Battista é amplamente considerado um dos carros mais belos em produção no mundo, com linhas fluidas que parecem esculpidas pelo vento.</p>
+      <p>Produzido em apenas 150 unidades ao preço de aproximadamente 2,2 milhões de dólares cada, o Battista é um objeto de desejo raro e exclusivo. Cada unidade é personalizada individualmente para o comprador, com infinitas opções de combinações de cores, materiais e acabamentos. É a hiperestrada elétrica italiana elevada ao nível de arte.</p>
+    </div>
+
+    <hr class="rank-divider">
+
+    <div class="rank-section">
+      <div class="rank-header">
+        <div class="rank-number">#3</div>
+        <div>
+          <div class="rank-title">Lotus Evija</div>
+          <div class="rank-subtitle">Reino Unido · Lotus Cars</div>
+        </div>
+      </div>
+      <div class="specs-bar">
+        <div class="spec"><span class="spec-label">Vel. Máxima</span><span class="spec-value">320+ km/h</span></div>
+        <div class="spec"><span class="spec-label">0–100 km/h</span><span class="spec-value">~2,0 s</span></div>
+        <div class="spec"><span class="spec-label">Autonomia</span><span class="spec-value">400 km</span></div>
+        <div class="spec"><span class="spec-label">Potência</span><span class="spec-value">2.000 cv</span></div>
+      </div>
+      <p>O Lotus Evija ostenta a maior potência desta lista: 2.000 cavalos de força provenientes de quatro motores elétricos posicionados próximos a cada roda. Para a Lotus, fabricante britânica com décadas de história em veículos leves e ágeis para o motorsport, o Evija representa uma guinada radical para a era elétrica sem abrir mão do DNA de leveza e resposta aguda que define a marca.</p>
+      <p>O Evija pesa cerca de 1.680 kg — extraordinariamente leve para um carro com este nível de potência e tamanho de bateria. Isso é resultado do uso extensivo de fibra de carbono na carroceria e estrutura, além de uma engenharia obsessiva com redução de peso. O resultado é uma relação potência-peso que supera qualquer carro de produção já fabricado.</p>
+      <p>Apenas 130 unidades foram produzidas, cada uma vendida por cerca de 2,1 milhões de euros. O design do Evija é igualmente extraordinário: as tomadas de ar laterais que passam pela carroceria criam canais de fluxo de ar que também resfriram os motores — uma solução ao mesmo tempo funcional e esteticamente deslumbrante. O Evija marca o renascimento da Lotus como uma força na elite do automobilismo mundial.</p>
+    </div>
+
+    <hr class="rank-divider">
+
+    <div class="rank-section">
+      <div class="rank-header">
+        <div class="rank-number">#2</div>
+        <div>
+          <div class="rank-title">Aspark Owl</div>
+          <div class="rank-subtitle">Japão · Aspark Co., Ltd.</div>
+        </div>
+      </div>
+      <div class="specs-bar">
+        <div class="spec"><span class="spec-label">Vel. Máxima</span><span class="spec-value">400 km/h</span></div>
+        <div class="spec"><span class="spec-label">0–100 km/h</span><span class="spec-value">1,72 s</span></div>
+        <div class="spec"><span class="spec-label">Autonomia</span><span class="spec-value">450 km</span></div>
+        <div class="spec"><span class="spec-label">Potência</span><span class="spec-value">1.985 cv</span></div>
+      </div>
+      <p>O Aspark Owl é uma das surpresas mais extraordinárias do mundo automotivo moderno. Desenvolvido por uma empresa japonesa de engenharia relativamente desconhecida do grande público, o Owl ostenta uma aceleração de 0 a 100 km/h em apenas 1,72 segundos — um número que durante anos foi considerado fisicamente impossível para um veículo de produção em série e que ainda hoje rivaliza com os carros mais rápidos já testados.</p>
+      <p>A chave para o desempenho absurdo do Aspark Owl está em seu perfil extremamente baixo — o carro tem apenas 99,7 cm de altura — que reduz a resistência aerodinâmica e mantém o centro de gravidade incrivelmente próximo ao solo. Com quatro motores elétricos produzindo 1.985 cv e uma bateria de 64 kWh, o Owl pode atingir velocidade máxima de 400 km/h, tornando-se um dos poucos carros elétricos a cruzar essa barreira simbólica.</p>
+      <p>Apenas 50 unidades foram fabricadas, com preço de cerca de 3,2 milhões de dólares cada. O Aspark Owl é uma demonstração de que a inovação de ponta em eletrificação automotiva não está restrita às grandes montadoras — pequenas empresas de engenharia, com determinação e expertise suficientes, podem redefinir o que é possível em um automóvel.</p>
+    </div>
+
+    <hr class="rank-divider">
+
+    <div class="rank-section">
+      <div class="rank-header">
+        <div class="rank-number gold">#1</div>
+        <div>
+          <div class="rank-title">Rimac Nevera</div>
+          <div class="rank-subtitle">Croácia · Rimac Automobili</div>
+        </div>
+      </div>
+      <div class="specs-bar">
+        <div class="spec"><span class="spec-label">Vel. Máxima</span><span class="spec-value">412 km/h</span></div>
+        <div class="spec"><span class="spec-label">0–100 km/h</span><span class="spec-value">1,81 s</span></div>
+        <div class="spec"><span class="spec-label">Autonomia</span><span class="spec-value">490 km (WLTP)</span></div>
+        <div class="spec"><span class="spec-label">Potência</span><span class="spec-value">1.914 cv</span></div>
+      </div>
+      <p>O Rimac Nevera é o carro elétrico de produção em série mais rápido do mundo. Em agosto de 2023, nas pistas de Papenburg, na Alemanha, um Nevera de série — sem modificações para fins de record — atingiu a velocidade máxima de 412 km/h, estabelecendo um novo recorde mundial oficial para veículos elétricos de produção. Esse número coloca o Nevera na elite absoluta dos carros mais rápidos já construídos, independentemente do tipo de propulsão.</p>
+      <p>Por trás do Nevera está Mate Rimac, um engenheiro croata que começou a construir carros elétricos de alto desempenho em sua garagem ainda adolescente. O Nevera é o resultado de anos de desenvolvimento de tecnologia proprietária em sistemas de bateria de alta performance, motores elétricos e software de gestão de torque vetorial. Com 1.914 cv provenientes de quatro motores independentes — um em cada roda —, o sistema de controle do Nevera é capaz de ajustar o torque de cada roda individualmente em milissegundos, otimizando a tração em qualquer condição.</p>
+      <p>Além dos records de velocidade, o Rimac Nevera é tecnologicamente avançado em todos os aspectos. O sistema de bateria de 120 kWh permite uma autonomia de 490 km no ciclo WLTP — notável para um carro de desempenho desta magnitude. A Rimac também se tornou um player central na indústria automotiva global: a empresa detém participação na Bugatti e fornece tecnologia para diversas outras montadoras. Com apenas 150 unidades produzidas a um preço de 2,2 milhões de euros, o Nevera é a prova definitiva de que a era elétrica não abriu mão da emoção — ela a reinventou.</p>
+    </div>
+
+    <div class="conclusion">
+      <h2>Conclusão</h2>
+      <p>A corrida por velocidade sempre foi um dos motores mais poderosos da inovação automotiva. O que surpreende no caso dos carros elétricos é a velocidade com que eles superaram décadas de supremacia dos motores a combustão. Em menos de uma década, pequenas empresas como Rimac e Aspark desafiaram gigantes centenários e estabeleceram novos limites do possível. E o mais fascinante é que ainda estamos no início desta revolução: à medida que baterias evoluem, motores ficam mais eficientes e softwares mais inteligentes, é difícil imaginar onde estarão esses limites daqui a dez anos.</p>
+    </div>
+
+    <div class="more-episodes">
+      <h3>Explore Mais Episódios</h3>
+      <p>Descubra outros temas fascinantes do nosso canal educativo.</p>
+      <a href="../videos.html" class="btn">Ver Todos os Episódios →</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo"><img src="../logo-192.png" alt="TopPilot"><span>TopPilot</span></div>
+    <p><a href="../privacy.html">Privacy Policy</a><a href="../terms.html">Terms of Service</a></p>
+    <br><p>&copy; 2026 TopPilot. All rights reserved. &nbsp;·&nbsp; top5automatizado@gmail.com</p>
+  </footer>
+</body>
+</html>
